@@ -1,0 +1,109 @@
+*,
+::after,
+::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+@font-face {
+    font-family: "FontAwesome";
+    src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
+    src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype");
+    src: url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2");
+    src: url("../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff");
+    src: url("../fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype");
+    src: url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    color: #000;
+    font-size: 1.5rem;
+    font-family: "Verdana", "Font Awesome 6 Free", "Geneva", Tahoma, sans-serif5;
+
+    background: url(../img/Group1322.svg);
+    background-repeat: no-repeat;
+
+    --color-blue: #2351f5;
+    --color-blue2: rgba(35, 81, 245, 0.8);
+
+    --color-black: #282828;
+    --color-black2: #050505;
+
+    --color-gray: #383838;
+
+    --color-white: #ffffff;
+    --color-white2: #d2d2d2;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-black);
+}
+/* @media only screen and (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+  @media only screen and (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    .container {
+      max-width: 1140px;
+    }
+  }
+  @media only screen and (min-width: 1400px) {
+    .container {
+      max-width: 1320px;
+    }
+  } */
+
+/* margin padding helper */
+.pt-20 {
+    padding-top: 2rem;
+}
+.pb-20 {
+    padding-bottom: 2rem;
+}
+.pt-40 {
+    padding-top: 4rem;
+}
+.pb-40 {
+    padding-bottom: 4rem;
+}
+.mt-20 {
+    margin-top: 2rem;
+}
+.mb-20 {
+    margin-bottom: 2rem;
+}
+.mt-50 {
+    margin-top: 5rem;
+}
+.mb-50 {
+    margin-bottom: 5rem;
+}
+.mt-60 {
+    margin-top: 6rem;
+}
+.mb-60 {
+    margin-bottom: 6rem;
+}

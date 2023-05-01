@@ -1,0 +1,150 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 65%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.modal__box1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modal__box2 {
+    background-image: url(../img/Rectangle\ 1992.png);
+    width: 47rem;
+    height: 50rem;
+    background-size: cover;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem 0 2rem;
+}
+
+.form__details {
+    margin: 2rem 0;
+}
+
+.form__details label {
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding-right: 1rem;
+}
+
+.email label,
+.name label {
+    padding-right: 4.8rem;
+}
+
+.form__details input {
+    background-color: rgba(242, 242, 242, 1);
+    border: none;
+    padding: 1rem;
+    width: 28rem;
+    margin-top: 1.5rem;
+}
+
+input::placeholder {
+    color: rgba(166, 166, 166, 1);
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.name > span,
+.email > span,
+.pass > span {
+    color: red;
+    font-size: 1.3rem;
+    margin-left: 2rem;
+}
+
+.submit {
+    background: linear-gradient(92.48deg, #2351f5 2.08%, #3c94fb 117.25%);
+    padding: 1.5rem 4rem;
+    width: 18rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    margin-top: 3rem;
+    cursor: pointer;
+}
+
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.close-button {
+    display: none;
+}
+
+@media only screen and (max-width: 992px) {
+    .modal__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .modal__box2 {
+        position: relative;
+        width: 100%;
+        background: linear-gradient(rgba(41, 41, 41, 0.7), rgba(66, 54, 64, 0.7)), url(../img/Rectangle\ 1992.png);
+        background-size: cover;
+    }
+    .modal__box1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(2px);
+        color: #ffffff;
+        z-index: 10;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .submit {
+        margin-top: 1rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .form__details input {
+        width: 20rem;
+    }
+
+    .submit {
+        padding: 1.5rem 2rem;
+        width: 14rem;
+    }
+}

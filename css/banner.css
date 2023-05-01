@@ -1,0 +1,75 @@
+.banner__section {
+    width: 100%;
+}
+.banner {
+    background: url(../img/Rectangle24.png);
+    width: 100%;
+    height: 603px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.banner__box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+.banner__box-img {
+    padding-top: 11.5rem;
+}
+.banner__text {
+    width: 50%;
+    padding: 3rem 5rem;
+}
+
+.banner__h6 {
+    color: var(--color-white);
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+.banner__p {
+    color: var(--color-white);
+    font-size: 2.9rem;
+    font-weight: 800;
+    line-height: 4.5rem;
+    margin: 2.5rem 0;
+}
+.banner__p2 {
+    color: var(--color-white);
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 3.6rem;
+}
+
+@media only screen and (max-width: 992px) {
+    .banner__box-img > img {
+        width: 396px;
+        height: 390px;
+    }
+    .banner__box-img {
+        padding-top: 21.5rem;
+    }
+
+    .banner__p {
+        font-size: 2rem;
+        line-height: 4rem;
+        margin: 2rem 0;
+    }
+    .banner__p2 {
+        font-size: 1.3rem;
+        line-height: 3rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .banner__box-img {
+        display: none;
+    }
+
+    .banner__text {
+        width: 100%;
+        padding: 3rem 3rem;
+    }
+}
